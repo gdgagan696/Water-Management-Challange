@@ -30,6 +30,7 @@ public class BillingInfo {
     public void setDaysInAMonth(int daysInAMonth) {
         this.daysInAMonth = daysInAMonth;
     }
+
     public boolean isWaterRatioInitializes(){
         return Objects.nonNull(corporationRatio) && Objects.nonNull(boreWellRatio);
     }

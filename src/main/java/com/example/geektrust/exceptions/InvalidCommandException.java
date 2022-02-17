@@ -1,15 +1,9 @@
 package com.example.geektrust.exceptions;
 
 public class InvalidCommandException extends RuntimeException {
-    private String msg;
 
-    public InvalidCommandException(String msg) {
-        this.msg = msg;
-    }
-
-    public InvalidCommandException(String message, String msg) {
+    public InvalidCommandException(String message) {
         super(message);
-        this.msg = msg;
     }
 
     @Override

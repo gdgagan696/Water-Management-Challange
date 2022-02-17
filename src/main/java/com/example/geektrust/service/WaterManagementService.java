@@ -10,6 +10,7 @@ import com.example.geektrust.service.billing.TankerWaterBillingServiceImpl;
 import java.util.Objects;
 
 public class WaterManagementService {
+
     private ApartmentInfo apartmentInfo;
     private CorporationWaterBillingServiceImpl corporationWaterBillingService;
     private BorewellWaterBillingServiceImpl borewellWaterBillingService;
@@ -62,4 +63,7 @@ public class WaterManagementService {
         System.out.println((int) totalWaterConsumed + " " + (int) totalBill);
     }
 
+    public ApartmentInfo getApartmentInfo() {
+        return apartmentInfo;
+    }
 }
